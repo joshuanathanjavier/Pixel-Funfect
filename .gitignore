@@ -1,0 +1,72 @@
+# Godot 4+ specific ignores
+.godot/
+.godot-editor/
+.godot-import/
+
+# Build and export directories
+/builds/
+/exports/
+/android/
+/ios/
+/web/
+/windows/
+/linux/
+/macos/
+
+# Godot cache and temporary files
+*.tmp
+*.temp
+*.log
+*.pid
+*.lock
+
+# Import cache
+import_cache/
+
+# Shader cache
+shader_cache/
+
+# UID cache
+uid_cache.bin
+*.uid
+
+# Scene groups cache
+scene_groups_cache.cfg
+
+# Global script class cache
+global_script_class_cache.cfg
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+*.log
+logs/
+
+# Node modules (if using npm packages)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local

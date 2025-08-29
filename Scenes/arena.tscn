@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://ymvw0fc45oji"]
+
+[ext_resource type="PackedScene" uid="uid://dfgbkbq2uodnq" path="res://Scenes/player.tscn" id="1_lq7nq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g21bf"]
+albedo_color = Color(0.00229786, 0.533434, 0.510489, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ubfh8"]
+material = SubResource("StandardMaterial3D_g21bf")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_444vf"]
+size = Vector2(1161, 134.5)
+
+[node name="Arena" type="Node2D"]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Floor"]
+position = Vector2(575, 580.31)
+rotation = 3.14159
+scale = Vector2(1151.71, -136.52)
+mesh = SubResource("BoxMesh_ubfh8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(574.5, 581.25)
+shape = SubResource("RectangleShape2D_444vf")
+
+[node name="Player" parent="." instance=ExtResource("1_lq7nq")]
+position = Vector2(542, 351)
