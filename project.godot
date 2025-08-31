@@ -13,7 +13,7 @@ config_version=5
 config/name="Pixel Funpect"
 run/main_scene="uid://ymvw0fc45oji"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://c2s7qb3igmtji"
 
 [input]
 
